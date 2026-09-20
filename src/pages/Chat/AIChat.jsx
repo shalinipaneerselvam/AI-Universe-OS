@@ -241,8 +241,12 @@ export default function AIChat() {
         message
       );
 
+      // ==========================================
+      // LIVE RENDER BACKEND
+      // ==========================================
+
       const response = await fetch(
-        "http://localhost:5000/api/chat",
+        "https://ai-universe-os.onrender.com/api/chat",
         {
           method: "POST",
 
@@ -416,7 +420,6 @@ export default function AIChat() {
 
     // ==========================================
     // IF NO ACTIVE CHAT
-    // CREATE CHAT DIRECTLY
     // ==========================================
 
     if (!currentChat) {
@@ -699,6 +702,7 @@ export default function AIChat() {
 
   return (
     <div className="h-full min-h-0 w-full overflow-hidden bg-[#F1F2F4] text-[#25272B]">
+
       <div className="flex h-full min-h-0 w-full overflow-hidden">
 
         {/* ==========================================
@@ -707,6 +711,7 @@ export default function AIChat() {
 
         {sidebarOpen && (
           <div className="w-[280px] h-full min-h-0 shrink-0 overflow-hidden bg-[#E8E9EC] border-r border-[#D9DADF]">
+
             <ChatSidebar
               chats={chats}
               activeChatId={activeChatId}
@@ -726,6 +731,7 @@ export default function AIChat() {
                 handlePinChat
               }
             />
+
           </div>
         )}
 
@@ -757,6 +763,7 @@ export default function AIChat() {
               </button>
 
               <div>
+
                 <h1 className="font-semibold text-[17px] tracking-tight text-[#25272B]">
                   AI Universe
                 </h1>
@@ -764,6 +771,7 @@ export default function AIChat() {
                 <p className="text-xs text-[#686B72]">
                   Your intelligent workspace
                 </p>
+
               </div>
 
             </div>
@@ -815,6 +823,7 @@ export default function AIChat() {
         </main>
 
       </div>
+
     </div>
   );
 }
