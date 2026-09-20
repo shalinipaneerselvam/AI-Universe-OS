@@ -1,16 +1,63 @@
-# React + Vite
+# 🚀 AI Universe OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Universe OS is an AI-powered workspace built with React, Vite, Node.js, Express, and Gemini API.
 
-Currently, two official plugins are available:
+It provides a single workspace to manage AI agents, projects, analytics, and AI conversations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🤖 AI Agent Management
+- 💬 AI Chat powered by Gemini
+- 🔄 AI Response Regeneration
+- 📋 Copy AI Responses
+- 🔎 Chat Search
+- 📌 Pin Chats
+- ✏️ Rename Chats
+- 🗑️ Delete Chats
+- 📊 Analytics Dashboard
+- 📁 Project Management
+- ⚙️ Settings
+- 🌙 Dark Mode Settings
+- 💾 Local Storage Persistence
+- 📱 Responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Recharts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+- Node.js
+- Express.js
+- Google Gemini API
+- CORS
+- dotenv
+
+## 📂 Project Structure
+
+```text
+AI-Universe-OS/
+│
+├── public/
+│
+├── server/
+│   ├── server.cjs
+│   ├── package.json
+│   └── package-lock.json
+│
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── routes/
+│   ├── App.jsx
+│   └── index.css
+│
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
