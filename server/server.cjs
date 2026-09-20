@@ -183,19 +183,15 @@ ${variationNumber}
 // START SERVER
 // ==================================================
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log("");
   console.log("========================================");
   console.log("🚀 AI Universe Backend");
   console.log("========================================");
-  console.log(
-    `🌐 Server: http://localhost:${PORT}`
-  );
-  console.log(
-    `💬 Chat API: http://localhost:${PORT}/api/chat`
-  );
+  console.log(`🌐 Server running on port ${PORT}`);
+  console.log("💬 Chat API: /api/chat");
   console.log("♾️ Message limit: No application limit");
   console.log("========================================");
   console.log("");
